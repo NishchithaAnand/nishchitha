@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nishchitha V A</title>  
+  <link
+  href="https://fonts.googleapis.com/css2?
+    family=Dancing+Script&           <!-- for the “feminine” look -->
+    family=Poppins:wght@600;700&     <!-- 600 = Semi‑Bold, 700 = Bold -->
+    display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">N</div>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon">
+      <img src="images/menu-svgrepo-com.svg" alt="menu" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#connect">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="landing">
+    <div class="bg-image"></div>
+  
+    <!-- white panel that slides in from the right -->
+    <div class="text-panel animate-panel">
+      <div class="text-section animate-text">
+        <h3>Hello, I'm</h3>
+        <h1 class="name-hover">
+            <span style="color: #4E9E1B;">N</span>
+            <span>i</span><span>s</span><span>h</span><span>c</span>
+            <span>h</span><span>i</span><span>t</span><span>h</span><span>a</span>
+            <span class="spacer"></span>
+            <span>V</span>
+            <span class="spacer"></span>
+            <span>A</span>
+          </h1>
+        <h2>UI 
+            <span style="color: #4e9e1b;">/</span>
+            UX Designer and Developer
+        </h2>
+      </div>
+      <div class="landing-buttons">
+        <a href="your-resume.pdf" class="btn resume-btn" download>
+          <!-- download icon SVG -->
+          My Resume
+          <img src="images/whitecv.svg" alt="download icon" class="btn-icon">
+          
+        </a>
+        <a href="#connect" class="btn connect-btn">
+          Let’s Connect
+          <img src="images/greenchat.svg" alt="chat icon" class="btn-icon">
+        </a>
+      </div>
+      
+    </div>
+  
+    <div class="image-section animate-image">
+      <img src="images/myphoto.jpg" alt="Nishchitha V A">
+    </div>
+  </section>
+
+
+  <!-- about me -->
+  <section class="about-me" id="about">
+    <div class="about-me-content">
+      <div class="image-container">
+        <img src="images/lady.png" alt="Vector Image">
+      </div>
+      <div class="text-container">
+        <h2>Tech, Design, and Everything In Between</h2>
+        <p>
+            Welcome to my creative and technical hub! 
+        </p>
+        <p>
+            My journey began as a Software Engineer at Accenture, where I strengthened my problem-solving skills and built meaningful client relationships. Over time, my interest expanded into web development, leading me to work with technologies like Python Flask, Java, HTML, CSS, and JavaScript.
+        </p>
+        <p>
+            Alongside my technical journey, I found a deep passion for UI/UX design. I’ve explored tools like Figma and Adobe Illustrator, and earned certifications as well. Currently, I’m upskilling through a dedicated UI/UX design course by Internshala, diving deeper into user research, design thinking, empathy mapping, etc. to create more intuitive and user-centered digital experiences.        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- time line  -->
+  <section class="timeline-wrapper">
+    <div class="timeline-line"></div>
+  
+    <div class="flash-card card-1">
+      <div class="icon-placeholder">
+        <img src="images/puc.png" alt="puc icon" width="60" height="60">
+      </div>
+      <h3>Venkatadri Ind. PU College</h3>
+      <p>PCMB 94.50%</p>
+      <p>2014 - 2016</p>
+    </div>
+  
+    <div class="flash-card card-2">
+      <div class="icon-placeholder">
+        <img src="images/hat2.png" alt="cap icon" width="100" height="60">
+      </div>
+      <h3>PES University</h3>
+      <p>B.Tech in EEE 8.65/10</p>
+      <p>Minors in CS</p>
+      <p>2016 - 2020</p>
+    </div>
+  
+    <div class="flash-card card-3">
+      <div class="icon-placeholder">
+        <img src="images/acc.svg" alt="acc icon" width="60" height="60">
+      </div>
+      <h3>Accenture</h3>
+      <p>Packaged App Development Analyst</p>
+      <p>2021 Jan – 2023 Sep</p>
+    </div>
+  
+    <div class="flash-card card-4">
+      <div class="icon-placeholder">
+        <img src="images/is.svg" alt="is icon" width="60" height="60">
+      </div>
+      <h3>UI UX Design Course</h3>
+      <p>Internshala</p>
+      <p>2025 Mar - Present</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section class="skills-circle-section">
+  <h2 class="section-title">Skills</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filters"> 
+    <button data-filter="design" class="filter-btn">Design Skills</button>
+    <button data-filter="technical" class="filter-btn">Technical Skills</button>
+    <button data-filter="softskills" class="filter-btn">Soft Skills</button>
+    <button data-filter="others" class="filter-btn">Others</button>
+  </div>
+
+  <!-- Horizontally Scrollable Container -->
+  <div class="circle-container-scroll">
+    <!-- Figma (Design) -->
+    <div class="circle-chart design" data-category="design" data-percentage="90">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                   a15.9155 15.9155 0 0 1 0 31.831
+                   a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                   a15.9155 15.9155 0 0 1 0 31.831
+                   a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/figma.svg" alt="Figma" />
+        </div>
+      </div>
+      <div class="skill-label">Figma</div>
+    </div>
+
+    <!-- Adobe illustrator -->
+    <div class="circle-chart design" data-category="design" data-percentage="78">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                   a15.9155 15.9155 0 0 1 0 31.831
+                   a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                   a15.9155 15.9155 0 0 1 0 31.831
+                   a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/adobe-illustrator-svgrepo-com.svg" alt="ai" />
+        </div>
+      </div>
+      <div class="skill-label">Adobe Illustrator</div>
+    </div>
+
+    <!-- Adobe photoshop -->
+    <div class="circle-chart design" data-category="design" data-percentage="70">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/ps.svg" alt="ps" />
+        </div>
+      </div>
+      <div class="skill-label">Adobe Photoshop</div>
+    </div>
+
+    <!-- Canva-->
+    <div class="circle-chart design" data-category="design" data-percentage="90">
+    <div class="circular-wrapper">
+      <svg viewBox="0 0 36 36" class="circular-chart">
+        <path class="circle-bg"
+              d="M18 2.0845
+                  a15.9155 15.9155 0 0 1 0 31.831
+                  a15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="circle"
+              stroke-dasharray="75, 100"
+              d="M18 2.0845
+                  a15.9155 15.9155 0 0 1 0 31.831
+                  a15.9155 15.9155 0 0 1 0 -31.831"/>
+      </svg>
+      <div class="icon-container">
+        <img src="images/canva-svgrepo-com.svg" alt="canva" />
+      </div>
+    </div>
+    <div class="skill-label">Canva</div>
+  </div>
+
+  <!-- Procreate-->
+  <div class="circle-chart design" data-category="design" data-percentage="90">
+    <div class="circular-wrapper">
+      <svg viewBox="0 0 36 36" class="circular-chart">
+        <path class="circle-bg"
+              d="M18 2.0845
+                  a15.9155 15.9155 0 0 1 0 31.831
+                  a15.9155 15.9155 0 0 1 0 -31.831"/>
+        <path class="circle"
+              stroke-dasharray="75, 100"
+              d="M18 2.0845
+                  a15.9155 15.9155 0 0 1 0 31.831
+                  a15.9155 15.9155 0 0 1 0 -31.831"/>
+      </svg>
+      <div class="icon-container">
+        <img src="images/brush-tool-svgrepo-com.svg" alt="procreate" />
+      </div>
+    </div>
+    <div class="skill-label">Procreate</div>
+  </div>
+
+    <!-- Design Thinking -->
+    <div class="circle-chart design" data-category="design" data-percentage="90">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/bars-progress-svgrepo-com.svg" alt="dt" />
+        </div>
+      </div>
+      <div class="skill-label">Design Thinking</div>
+    </div>
+
+    <!-- Information Architecture -->
+    <div class="circle-chart design" data-category="design" data-percentage="86">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/architecture-svgrepo-com.svg" alt="at" />
+        </div>
+      </div>
+      <div class="skill-label">Information Architecture</div>
+    </div>
+
+    <!-- UI -->
+    <div class="circle-chart design" data-category="design" data-percentage="86">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/mobile-alt-2-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">UI Consistency</div>
+    </div>
+
+    <!-- Python (Technical) -->
+    <div class="circle-chart design" data-category="technical" data-percentage="82">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/python-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Python</div>
+    </div>
+
+    <!-- HTML (Technical) -->
+    <div class="circle-chart design" data-category="technical" data-percentage="94">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/html5-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">HTML</div>
+    </div>
+
+    <!-- CSS (Technical) -->
+    <div class="circle-chart design" data-category="technical" data-percentage="95">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/css3-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">CSS</div>
+    </div>
+
+    <!-- Java (Technical) -->
+    <div class="circle-chart design" data-category="technical" data-percentage="80">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/java-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Java</div>
+    </div>
+
+    <!-- JavaScript (Technical) -->
+    <div class="circle-chart design" data-category="technical" data-percentage="70">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/javascript-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">JavaScript</div>
+    </div>
+
+    <!-- SAP ABP -->
+    <div class="circle-chart design" data-category="technical" data-percentage="70">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/sap-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">SAP ABAP</div>
+    </div>
+
+    <!-- SQL -->
+    <div class="circle-chart design" data-category="technical" data-percentage="80">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/database-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">SQL</div>
+    </div>
+
+    <!--Code Optimization -->
+    <div class="circle-chart design" data-category="technical" data-percentage="75">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/coding-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Code Optimization</div>
+    </div>
+
+    <!-- Problem Solving -->
+    <div class="circle-chart design" data-category="softskills" data-percentage="85">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/problem-solver-solution-problem-solving-skill-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Problem Solving</div>
+    </div>
+
+    <!--Mentorship -->
+    <div class="circle-chart design" data-category="softskills" data-percentage="84">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/team-leader-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Mentorship</div>
+    </div>
+
+    <!-- Client Interactions -->
+    <div class="circle-chart design" data-category="softskills" data-percentage="90">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/users-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Client Interactions</div>
+    </div>
+
+    <!-- Communication -->
+    <div class="circle-chart design" data-category="softskills" data-percentage="90">
+      <div class="circular-wrapper">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                    a15.9155 15.9155 0 0 1 0 31.831
+                    a15.9155 15.9155 0 0 1 0 -31.831"/>
+        </svg>
+        <div class="icon-container">
+          <img src="images/talking-chat-svgrepo-com.svg" alt="ui" />
+        </div>
+      </div>
+      <div class="skill-label">Communication</div>
+    </div>
+  </div>
+  
+</section>
+    
+<!-- Projects -->
+<section class="projects">
+  <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+
+      <!-- First Project Card -->
+      <div class="project-card">
+        <!-- Video + Skills Column -->
+        <div class="project-video">
+          <video width="100%" controls>
+            <source src="images/itgods.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- Skills Badges -->
+          <div class="project-skills">
+            <span class="skill" style="--i:0;">Figma</span>
+            <span class="skill" style="--i:1;">User Research</span>
+            <span class="skill" style="--i:2;">CSS</span>
+            <span class="skill" style="--i:3;">Secondary Research</span>
+            <span class="skill" style="--i:4;">Python</span>
+            <span class="skill" style="--i:5;">Flask</span>
+            <span class="skill" style="--i:6;">MySQL</span>
+            <span class="skill" style="--i:7;">Competative Analysis</span>
+            <span class="skill" style="--i:8;">Wireframing</span>
+            <span class="skill" style="--i:9;">Prototyping</span>
+            <span class="skill" style="--i:10;">HTML</span>
+          </div>
+        </div>
+      
+        <!-- Info Column -->
+        <div class="project-info">
+          <h3>Property Rental Website</h3>
+          <p>
+            Designed the UI/UX using Figma and developed a property rental website with Flask, 
+            allowing users to browse and rent properties. Led back‑end work with Python Flask & MySQL, 
+            added image upload, and built the front‑end with HTML, CSS, JavaScript & Jinja2.
+          </p>
+          <a href="https://itgods.pythonanywhere.com/" class="btn view-project-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+      
+
+      <!-- Second Project Card -->
+      <div class="project-card">
+        <!-- Video + Skills Column -->
+        <div class="project-video">
+          <video width="100%" controls>
+            <source src="images/currency.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- Skills Badges -->
+          <div class="project-skills">
+            <span class="skill">Figma</span>
+            <span class="skill">Wireframing</span>
+            <span class="skill">Prototyping</span>
+            <span class="skill">User Flow Design</span>
+            <span class="skill">UI Design</span>
+            <span class="skill">Components</span>
+            <span class="skill">Typography</span>
+            <span class="skill">Color Theory</span>
+            <span class="skill">Auto Layout</span>
+            <span class="skill">Design Thinking</span>
+            <span class="skill">User Research</span>
+          </div>
+        </div>
+      
+        <!-- Info Column -->
+        <div class="project-info">
+          <h3>Currency Exchange App</h3>
+          <p>
+            Designed an intuitive and modern currency converter mobile application using Figma, focused on delivering a seamless user experience. The app allows users to convert currencies with accurate exchange rate data. It features a clean and minimal interface tailored for quick conversions, incorporating thoughtful UX elements.
+          </p>
+          <a href="https://www.figma.com/proto/Q1xJG1LEKdYzlCliW9UOyd/currency-exchange-app-nishchitha?node-id=0-1&t=RiDQLRAygVKiZUAg-1" class="btn view-project-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Third Project Card -->
+      <div class="project-card">
+        <!-- Video + Skills Column -->
+        <div class="project-video">
+          <video width="100%" controls>
+            <source src="images/homeba.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- Skills Badges -->
+          <div class="project-skills">
+            <span class="skill">Figma</span>
+            <span class="skill">User Research</span>
+            <span class="skill">Wireframing</span>
+            <span class="skill">Prototyping</span>
+            <span class="skill">UI/UX Design</span>
+            <span class="skill">Design Thinking</span>
+            <span class="skill">Typography</span>
+            <span class="skill">Information Architecture</span>
+            <span class="skill">Mobile App Design</span>
+            <span class="skill">Paint points</span>
+            <span class="skill">Interactive Prototypes</span>
+            <span class="skill">Real Estate Domain</span>
+            <span class="skill">Visual appealing</span>
+          </div>
+        </div>
+      
+        <!-- Info Column -->
+        <div class="project-info">
+          <h3>Homeba - Real Estate Agents App</h3>
+          <p>
+            Designed a mobile application using Figma to bridge the gap between real estate agents and home seekers. 
+    Homeba offers a clean, intuitive UI tailored for all age groups, enabling users to discover top-rated properties 
+    and instantly connect with agents or schedule property visits with a single click. In a cluttered and competitive 
+    real estate market, Homeba stands out by bringing structure, simplicity, and speed to the home-finding experience.
+          </p>
+          <a href="https://www.figma.com/proto/1ru3qjvtqRnUnH9k8fwzMU/homeba?node-id=0-1&t=2MA1HiZB7gsS8mcq-1" class="btn view-project-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Fourth Project Card -->
+      <div class="project-card">
+        <!-- Video + Skills Column -->
+        <div class="project-video">
+          <video width="100%" controls>
+            <source src="images/tax.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <!-- Skills Badges -->
+          <div class="project-skills">
+              <span class="skill">Figma</span>
+              <span class="skill">HTML</span>
+              <span class="skill">CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Responsive Design</span>
+              <span class="skill">UI/UX Design</span>
+              <span class="skill">Video Editing</span>
+              <span class="skill">2025 Indian Tax Rules</span>
+              <span class="skill">User-Centric Design</span>
+              <span class="skill">Netlify</span>
+              <span class="skill">Formula Simplification</span>
+              <span class="skill">Inshot/VN</span>
+              <span class="skill">User pain points</span>
+              <span class="skill">Github</span>
+              <span class="skill">Visual Communication</span>
+              <span class="skill">Interactive Prototyping</span>
+            
+            </div>
+        </div>
+      
+        <!-- Info Column -->
+        <div class="project-info">
+          <h3>2025 Tax Calculator</h3>
+          <p>Developed a responsive income tax calculator tailored to the 2025 Indian tax regime. 
+            The tool simplifies complex tax formulas into an intuitive format easily understandable 
+            by users of any age group. Designed the interface in Figma with a focus on clarity and accessibility, 
+            and implemented it using HTML, CSS, and JavaScript. The project also included a complete video edit 
+            for a YouTuber to visually explain the tax process using the tool, offering a clean and informative experience.
+          </p>
+          <a href="https://taxfy2025.netlify.app/" class="btn view-project-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Publications -->
+<section class="publications-section">
+  <h2 class="section-title">Publications</h2>
+  <div class="pub-cards">
+    <!-- Repeat this .pub-card for each publication -->
+    <div class="pub-card">
+      <h3 class="pub-title">Automatic Traffic Light Control System using Digital Image Processing
+        and Ambulance Detection using Radio Frequency Sensors</h3>
+      <p class="pub-meta">
+        <span class="pub-authors">Nishchitha V A</span> •
+        <span class="pub-journal">IRJET Volume 07 Issue 06</span>, June 2020
+      </p>
+      <a href="https://www.irjet.net/archives/V7/i6/IRJET-V7I6955.pdf" class="pub-link" target="_blank" rel="noopener">
+        Read More
+      </a>
+    </div>
+
+    <div class="pub-card">
+      <h3 class="pub-title">Load Frequency Control of a Four Area Interconnected Power System with Non-Linearity using Fuzzy Logic PID Controller</h3>
+      <p class="pub-meta">
+        <span class="pub-authors">Nishchitha V A</span> •
+        <span class="pub-journal">IJERT</span>, May 2021
+      </p>
+      <a href="https://www.ijert.org/load-frequency-control-of-a-four-area-interconnected-thermal-hydro-nuclear-wind-power-system-with-non-linearity-using-fuzzy-logic-pid-controller" class="pub-link" target="_blank" rel="noopener">
+        Read More
+      </a>
+    </div>
+
+    <!-- add more cards as needed -->
+  </div>
+</section>
+
+
+<!-- Certifications -->
+<section id="certifications">
+  <div class="tabs">
+    <button id="show-awards" class="tab-btn active">Awards</button>
+    <button id="show-certifications" class="tab-btn">Certifications</button>
+  </div>
+
+  <div class="cards-container">
+    <div id="awards-section" class="cards-grid">
+      <!-- Your Awards Cards here -->
+      <div class="cert-card">
+        <img src="award1.png" alt="Award 1">
+        <h3>Award Title 1</h3>
+        <p>Description of the award and its significance.</p>
+        <span>2023</span>
+      </div>
+      <div class="cert-card">
+        <img src="award1.png" alt="Award 1">
+        <h3>Award Title 1</h3>
+        <p>Description of the award and its significance.</p>
+        <span>2023</span>
+      </div>
+      <div class="cert-card">
+        <img src="award1.png" alt="Award 1">
+        <h3>Award Title 1</h3>
+        <p>Description of the award and its significance.</p>
+        <span>2023</span>
+      </div>
+      <div class="cert-card">
+        <img src="award1.png" alt="Award 1">
+        <h3>Award Title 1</h3>
+        <p>Description of the award and its significance.</p>
+        <span>2023</span>
+      </div>
+    </div>
+
+    <div id="certifications-section" class="cards-grid hidden">
+      <!-- Your Certifications Cards here -->
+      <div class="cert-card">
+        <img src="images/Accenture-logo-no-background.png" alt="Certification 1">
+        <h3>User Experience (UX) </h3>
+        <p>This online course provided an introduction to user experience (UX) and explained why UX is important
+          in this ever-evolving digital world.</p>
+        <span>2023</span>
+      </div>
+      <div class="cert-card">
+        <img src="images/pes.png" alt="Certification 1">
+        <h3>Minors in Computer Science</h3>
+        <p>In this course i gained knowledge in Data Structures and Algorithms, Operating Systems, Database Managment System</p>
+        <span>2019</span>
+      </div>
+      <div class="cert-card">
+        <img src="images/intershala.png" alt="Certification 1">
+        <h3>UI UX Course</h3>
+        <p>In Depth course </p>
+        <span>2024</span>
+      </div>
+      <div class="cert-card">
+        <img src="cert1.png" alt="Certification 1">
+        <h3>Certification Title 1</h3>
+        <p>Description of the certification and its significance.</p>
+        <span>2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="connect-section" id="connect">
+  <div class="connect-left">
+    <h2>Connect with Me</h2>
+    <ul class="social-grid">
+      <li>
+        <div class="connect-social">
+          <p><a href="https://youtube.com/@nva_art?si=B3ejoVF-II5bDz6V" target="_blank"><img src="images/youtube.svg" alt="youtube"></a></p>
+          <a href="https://youtube.com/@nva_art?si=B3ejoVF-II5bDz6V" target="_blank">nva_art</a>
+        </div>
+      </li>
+      <li>
+        <div class="connect-social">
+          <p>
+          <a href="https://www.linkedin.com/in/nishchitha-anand-3b3948178?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/linkedin-svgrepo-com.svg" alt="linkedin"></a>
+          </p>
+          <a href="https://www.linkedin.com/in/nishchitha-anand-3b3948178?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Nishchitha Anand</a>
+        </div>
+      </li>
+      <li>
+        <div class="connect-social">
+          <p>
+          <a href="https://www.instagram.com/nva__art?utm_source=qr&igsh=a2dqcDRsYmwybTgz" target="_blank">
+            <img src="images/instagram-svgrepo-com.svg" alt="instagram"></a>
+          </p>
+          <a href="https://www.instagram.com/nva__art?utm_source=qr&igsh=a2dqcDRsYmwybTgz" target="_blank">nva__art</a>
+        </div>
+      </li>
+      <li>
+        <div class="connect-social">
+          <p>
+            <a href="mailto:nishchithava@gmail.com" target="_blank">
+              <img src="images/gmail-svgrepo-com.svg" alt="gmail">
+            </a>
+          </p>
+          <a href="mailto:nishchithava@gmail.com" target="_blank">nishchithava@gmail.com</a> 
+        </div>
+      </li>
+      <li>
+        <div class="connect-social">
+          <p>
+            <a href="https://x.com/itsnva18?t=3ImKhFmvXIU6uXnhpv7xdQ&s=08" target="_blank">
+              <img src="images/x.svg" alt="x"></a>
+            </a>
+          </p>
+          <a href="https://x.com/itsnva18?t=3ImKhFmvXIU6uXnhpv7xdQ&s=08" target="_blank">itsnva18</a>
+        </div>
+      </li>
+      <li>
+        <div class="connect-social">
+          <p>
+            <a href="https://www.behance.net/nishchithava" target="_blank">
+              <img src="images/behance-rounded-border-svgrepo-com.svg" alt="behance"></a>
+          </p>
+          <a href="https://www.behance.net/nishchithava" target="_blank">nishchithava</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+    <textarea name="message" placeholder="Type your message..." required></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+  <div class="connect-right">
+    <img src="images/connect.png" alt="Connect with Me Image" />
+  </div>
+  
+</section>
+
+  
+<script src="script.js"></script>
+  
+</body>
+</html>
