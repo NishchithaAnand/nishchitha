@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const charts        = document.querySelectorAll('.circle-chart');
 
+  
   // Animate one chart's circle from 0 → its data-percentage
   function animateChart(chart) {
     const pct    = chart.dataset.percentage;
@@ -58,3 +59,4 @@ showCertificationsBtn.addEventListener('click', () => {
   showCertificationsBtn.classList.add('active');
   showAwardsBtn.classList.remove('active');
 });
+
