@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600;700&display=swap');
 
+button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -618,6 +628,7 @@ body {
   object-fit: contain;
 }
 
+
 .skill-label {
   margin-top: 0.5rem;
   font-size: 0.85rem;
@@ -741,7 +752,7 @@ body {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  height: 280px;
+  height: 250px;
 }
 
 .cert-card img {
@@ -983,12 +994,14 @@ body {
   /* About Me Section */
   .about-me-content {
     flex-direction: column;
+  }
+
+  .about-me-content h2 {
     text-align: center;
   }
 
-  .text-container {
-    padding-left: 0;
-    margin-top: 20px;
+  .about-me-content .text-container p {
+    text-align: center;
   }
 
   /* Projects Section */
@@ -1003,10 +1016,7 @@ body {
   .about-me {
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .about-me-content {
-    flex-direction: column;
+    margin-bottom: 10px;
   }
 
   .image-container {
@@ -1100,8 +1110,8 @@ body {
   .skills-circle-section{
     margin-top: 10px;
     padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .filters {
@@ -1153,8 +1163,9 @@ body {
   .circle-container-scroll::-webkit-scrollbar { 
     height: 2px;              
     width: 1px;
-    border-radius: 2px           
+    border-radius: 2px;       
   }
+  
   .circle-container-scroll::-webkit-scrollbar-track {
     background: transparent; 
   }
@@ -1209,6 +1220,8 @@ body {
     text-align: center;
     background-color: #4E9E1B;
   }
+
+  
   .publications-section {
     padding: 40px 40px;
   }
@@ -1228,6 +1241,23 @@ body {
   .pub-meta {
     font-size: 0.85rem;
   }
+
+  .tab-btn:focus {
+    outline: none;
+  }
+
+    @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.15); }
+    50% { transform: scale(0.95); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .tab-btn:active {
+    animation: bounce 0.3s ease;
+  }
+
 
   .cards-container {
     margin-left: 40px;
@@ -1288,7 +1318,8 @@ body {
 
   .connect-section h2 {
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 
   .connect-right img {
@@ -1312,6 +1343,9 @@ body {
 
   .contact-form button {
     width: 100%;
+    font-size:20px;
+    font-weight: 300;
+      
   }
 
   .social-grid {
