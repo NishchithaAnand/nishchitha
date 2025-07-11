@@ -60,3 +60,20 @@ showCertificationsBtn.addEventListener('click', () => {
   showAwardsBtn.classList.remove('active');
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+  const navItems = document.querySelectorAll('.nav-links a');
+
+  // Toggle dropdown
+  menuIcon?.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Auto-close on nav item click
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
+  });
+});
