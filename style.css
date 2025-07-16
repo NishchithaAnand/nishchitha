@@ -468,9 +468,16 @@ body {
   width: 300px;
 }
 
+.project-video img {
+  width: 100%;
+  align-items: center;
+  border-radius: 8px;
+}
+
+
 .project-video video {
   width: 300px;
-  display: block;
+  display: flex;
 }
 
 /* Info on right side */
@@ -1144,8 +1151,6 @@ body {
   }
 
   .skills-circle-section{
-    margin-top: 10px;
-    padding-top: 10px;
     padding-left: 25px;
     padding-right: 0;
   }
@@ -1182,8 +1187,10 @@ body {
   }
 
   .skill-label {
-    transform: translate(-0%, -100%);
     font-size: 12px;
+    text-align: center;
+    max-width: 70px;
+
   }
 
   .circle-container-scroll {
@@ -1194,16 +1201,18 @@ body {
     overflow-x: scroll;
     width: 100%;
     height: 100%;
+    overflow-x: auto;
 
   }
   .circle-container-scroll::-webkit-scrollbar { 
-    height: 2px;              
-    width: 1px;
-    border-radius: 2px;       
+    height:3px;
+    background: transparent;
+    width: none;
+    border-radius: none;       
   }
   
   .circle-container-scroll::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
   }
 
   .projects-container{
@@ -1222,10 +1231,8 @@ body {
   }
 
   .project-video img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    border-radius: 8px;
   }
 
   .project-video .project-skills {
